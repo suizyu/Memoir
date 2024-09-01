@@ -312,17 +312,16 @@ body {
                 }
 
                 img.welcome {
-                    left: 3rem;
-                    bottom: -25px;
+                    left: 2rem;
+                    top: 78.5svh;
                     width: min(65%, 900px);
                     filter: drop-shadow(2px 0 0  var(--white));
                     transform: rotate(-10.6deg);
-                }
 
-                @media (960px < width) {
-                    img.welcome {
-                        bottom: -45px;
-                        left: 6rem;
+                    
+                    @media (960px < width) {
+                        left: 3rem;
+                        top: 75svh;
                     }
                 }
             }
