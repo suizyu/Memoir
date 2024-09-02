@@ -163,9 +163,10 @@ body {
                 gap: 30px;
                 width: 100vw;
                 margin: 0 calc(50% - 50vw);
-                height: 100svh;
+                height: 100vh;
                 background: var(--main-color);
                 opacity: 1;
+                overflow: auto;
 
                 li {
                     text-align: center;
@@ -198,6 +199,7 @@ body {
             ul.open {
                 right: 0%;
                 transition: 0.5s;
+                overflow: hidden;
             }
             
             ul.hide {
