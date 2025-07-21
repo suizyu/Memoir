@@ -4,7 +4,7 @@
     --common-margin: 20px;
     --menu-padding: 20px;
     --header-height: 100px;
-    --header-height-pc: 130px;
+    --header-height-pc: 110px;
     --frame-border-weight: 15px;
     --frame-border: var(--frame-border-weight) var(--main-color) solid;
     --section-width: 87%;
@@ -316,7 +316,7 @@ body {
                     bottom: -25px;
                     width: min(65%, 900px);
                     filter: drop-shadow(2px 0 0  var(--white));
-                    transform: rotate(-10.6deg);
+                    /* transform: rotate(-10.6deg); */
                 }
 
                 @media (960px < width) {
@@ -399,6 +399,10 @@ body {
                                 color: var(--white);
                                 font-size: 18px;
 
+                                &:hover {
+                                    cursor: pointer;
+                                }
+
                                 .date {
                                     font-size: 1.2rem;
                                     margin-bottom: 10px;
@@ -450,18 +454,6 @@ body {
                                 .instagram-media {
                                     height: 100%;
                                 }
-
-                                &:first-child {
-                                    background: blue;
-                                }
-
-                                &:nth-child(2) {
-                                    background: pink;
-                                }
-
-                                &:nth-child(3) {
-                                    background: greenyellow;
-                                }
                             }
 
                             div.current {
@@ -483,6 +475,10 @@ body {
                                 color: var(--white);
                                 padding: 5px 10px;
                                 border-radius: 0 5px 5px 0;
+
+                                &:hover {
+                                    cursor: pointer;
+                                }
 
                                 &:has(input:checked) {
                                     background: var(--accent-color);
